@@ -19,6 +19,17 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "gallery"
+    label: "Gallery"
+    folder: "src/pages/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Images", name: "images", widget: "list", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Alt", name: "alt", widget: "string"}, {label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "text"}]}
+
   - name: "pages"
     label: "Pages"
     files:

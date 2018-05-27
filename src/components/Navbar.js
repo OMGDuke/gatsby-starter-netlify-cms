@@ -15,6 +15,9 @@ const Navbar = () => (
         </Link>
       </div>
       <div className="navbar-start">
+        <Link className="navbar-item" to="/gallery/my-gallery">
+          Gallery
+        </Link>
         <Link className="navbar-item" to="/about">
           About
         </Link>
